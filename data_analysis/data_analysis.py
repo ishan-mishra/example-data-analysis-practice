@@ -11,16 +11,12 @@ import warnings
 def download_data(location):
     '''downloads temperature data anomaly from Berkeley Earth for a given location
     
-    Parameters
-    ----------
-    location: str
-        name of the region
+    :param location: name of the region
+    :type location: str
+     
     
-    Returns
-    -------
-    
-    data: 2D numpy float array
-        data table
+    :return: data table
+    :rtype: 2D numpy float array     
     '''
     
     url = f'http://berkeleyearth.lbl.gov/auto/Regional/TAVG/Text/{location.lower()}-TAVG-Trend.txt'
@@ -35,17 +31,14 @@ def download_data(location):
 def moving_avg(data,width):
     '''calculates moving average of temperature anomaly data
     
-    Parameters
-    ----------
-    data: 1D numpy float array
-        temperature data
-    width: int
-        half-width of the moving window used for averaging
-    
-    Returns
-    -------
-    moving_avg: 1D numy float array
-        averaged data
+    :param data: 1D numpy float array 
+    :type data: temperature data
+     
+    :param width: half-width of the moving window used for averaging
+    :type width: int
+        
+    :return: averaged data
+    :rtype: 1D numpy float array
     '''
     
     moving_avg = np.full(data.size, np.nan)
@@ -60,17 +53,15 @@ def extract_monthly_anomaly(data):
     """
     Extract the monthly anomaly from the data array and calculate a decimal
     year.
+
+    :param data: raw data 
+    :type data: 1D numpy float array
     
-    Parameters
-    ----------
-    
-    data: 1D numpy float array
-    
-    Returns
-    -------
-    
-    decimal_year: float
-    anomaly: 1D numpy float array
+    :return: decimal year
+    :rtype: float
+
+    :return: anomaly
+    :rtype: 1D numpy float array
     
     """
     decimal_year = data[:, 0] + 1/12*(data[:, 1] - 1)

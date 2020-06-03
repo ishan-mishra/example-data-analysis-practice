@@ -16,6 +16,7 @@ Guide
    :caption: Table of Contents
    :maxdepth: 2
 
+   functions
    license
    help
 
