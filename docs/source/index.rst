@@ -17,6 +17,7 @@ Guide
    :maxdepth: 2
 
    functions
+   berkeley
    license
    help
 
