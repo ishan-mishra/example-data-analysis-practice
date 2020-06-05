@@ -26,4 +26,4 @@ SOFTWARE.
 Contact
 =======
 
-Question? Pplease contact im356@cornell.edu
+Question? Please contact im356@cornell.edu
