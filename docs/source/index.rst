@@ -1,13 +1,13 @@
 Simple documentation tutorial
-==========================================================
+=============================
 
-Another simple header
-=====================
+Welcome to data_analysis!
+=========================
 
-Here is some text explaining some very complicated stuff.::
-
-    print 'hello'
-    >> hello
+Here is an example where *data_analysis* is used to calculate the moving average of surface-air temperature anomaly data of Australia.
+ 
+.. image:: images/example.png
+  :width: 400
 
 Guide
 ^^^^^
