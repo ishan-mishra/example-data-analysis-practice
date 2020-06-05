@@ -58,7 +58,7 @@ def extract_monthly_anomaly(data):
     :type data: 1D numpy float array
     
     :return: decimal year
-    :rtype: float
+    :rtype: 1D numpy float array
 
     :return: anomaly
     :rtype: 1D numpy float array
