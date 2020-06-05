@@ -16,7 +16,7 @@ Guide
    :caption: Table of Contents
    :maxdepth: 2
 
-   functions
+   functi
    berkeley
    license
    help
